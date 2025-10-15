@@ -23,12 +23,12 @@ Once you have these parameters selected, click through the rest of the profile a
 **3) Cloning StopSec to Each Node**
 Run the following command on each node to clone StopSec repository to your nodes. 
   ```
-git clone https://github.com/StopSec/StopSec-System.git
+git clone https://github.com/Meles-Weldegebriel/Pseudonymetry.git
   ```
 Run the following command on each node to move to the directory that contains the StopSec files.
 
   ```
-cd StopSec-System
+cd Pseudonymetry
   ```
 
 **4) Run Experiments**
@@ -44,7 +44,7 @@ uvicorn remote_api:app --host 0.0.0.0 --port 8080
 ```
 uvicorn local_api:app --host 127.0.0.1 --port 8081
 ```
-4) on the PU run the following command to start StopSec receive operation. 
+4) on the PU run the following command to start Pseudonymetry receive operation. 
 ```
 python3 Watermark_RealTime_RX.py -f 3383e6 -r 5e6 -g 30
 ```
@@ -52,4 +52,4 @@ python3 Watermark_RealTime_RX.py -f 3383e6 -r 5e6 -g 30
 ```
 python3 Watermark_RealTime_TX.py -f 3383e6 -r 5e6 -g 20 --start_time 6:30
 ```
-6) Record values evaluate the StopSec system. 
+6) Record values to evaluate the Pseudonymetry system.
