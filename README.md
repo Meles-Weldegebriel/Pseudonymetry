@@ -17,10 +17,11 @@ run the following command on each of the nodes
 ssh -Y <username>@<radio_hostname>
 3) Cloning StopSec to Each Node Run the following command on each node to clone StopSec repository to your nodes.
 
-git clone [https://github.com/Meles-Weldegebriel/Pseudonymetry.git]
+git clone https://github.com/Meles-Weldegebriel/Pseudonymetry.git
+
 Run the following command on each node to move to the directory that contains the StopSec files.
 
-cd StopSec-System
+cd Pseudonymetry
 4) Run Experiments
 
 Install unicorn using the following command. Do that on all of the nodes.
@@ -31,6 +32,6 @@ open two terminals for each of the PU and SU nodes, and run the following comman
 uvicorn local_api:app --host 127.0.0.1 --port 8081
 on the PU run the following command to start StopSec receive operation.
 python3 Watermark_RealTime_RX.py -f 3383e6 -r 5e6 -g 30
-on each of the SU nodes start the transmission operation. Note that the start time is in 24 hour format. So, make sure to write when you want to start your experiment. Set the same time in all SUs if you want to see the impact of concurrent interference at the PU. Note also that these are default values. You can change the frequency, sampling rate and gains to see how StopSec performs under various signal-to-noise ratio (SNR), and bandwidth and frequencies. If you choose multiple concurrent SU transmissions, check the latency for the node that is turned off last. You can test for various SU and PU configurations and test the performance of StopSec under these configurations.
+on each of the SU nodes start the transmission operation. Note that the start time is in 24 hour format. So, make sure to write when you want to start your experiment. Set the same time in all SUs if you want to see the impact of concurrent interference at the PU. Note also that these are default values. You can change the frequency, sampling rate and gains to see how StopSec performs under various signal-to-noise ratio (SNR), and bandwidth and frequencies. If you choose multiple concurrent SU transmissions, check the latency for the node that is turned off last. You can test for various SU and PU configurations and test the performance of Pseudonymetry under these configurations.
 python3 Watermark_RealTime_TX.py -f 3383e6 -r 5e6 -g 20 --start_time 6:30
-Record values evaluate the StopSec system.
+Record values to evaluate the Pseudonymetry system.
