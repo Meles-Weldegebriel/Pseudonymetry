@@ -17,7 +17,7 @@ run the following command on each of the nodes
 ssh -Y <username>@<radio_hostname>
 3) Cloning StopSec to Each Node Run the following command on each node to clone StopSec repository to your nodes.
 
-git clone https://github.com/StopSec/StopSec-System.git
+git clone [https://github.com/Meles-Weldegebriel/Pseudonymetry.git]
 Run the following command on each node to move to the directory that contains the StopSec files.
 
 cd StopSec-System
